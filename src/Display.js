@@ -8,7 +8,7 @@ const Display = (props) => {
     return (<div style={{textAlign: "center"}}>
     {dogs.map(dog => {
       return (<article key={dog._id}>
-        <img src={dog.img} />
+        <img src={dog.img} alt='dog-for-adoption'/>
         <h1>{dog.name}</h1>
         <h3>{dog.age}</h3>
         <button onClick={() => {
