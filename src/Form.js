@@ -20,18 +20,21 @@ const Form = (props) => {
       <input
         type="text"
         name="name"
+        placeholder="Name"
         value={formData.name}
         onChange={handleChange}
       />
       <input
         type="number"
         name="age"
+        placeholder="Age"
         value={formData.age}
         onChange={handleChange}
       />
       <input
         type="text"
         name="img"
+        placeholder="Image URL"
         value={formData.img}
         onChange={handleChange}
       />
