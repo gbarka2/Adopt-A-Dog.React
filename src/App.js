@@ -77,11 +77,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1><FontAwesomeIcon className="paw" icon={faPaw} /> Adopt-A-Dog <FontAwesomeIcon className="paw" icon={faPaw} /></h1>
+      <h2><FontAwesomeIcon className="paw" icon={faPaw} /> Adopt-A-Dog <FontAwesomeIcon className="paw" icon={faPaw} /></h2>
       <Link to="/create">
       <button>Create a Dog</button>
       </Link>
-      <hr />
+      {/* <hr /> */}
       <main>
         <Switch>
           <Route 

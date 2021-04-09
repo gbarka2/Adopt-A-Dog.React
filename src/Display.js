@@ -5,9 +5,10 @@ const Display = (props) => {
   const {dogs} = props
   //loading function for if dogs exist
   const loaded = () => {
-    return (<div style={{textAlign: "center"}}>
+    return (
+    <div style={{textAlign: "center"}}>
     {dogs.map(dog => {
-      return (<article key={dog._id}>
+      return (<article className="dog-div" key={dog._id}>
         <img src={dog.img} alt='dog-for-adoption'/>
         <h1>{dog.name}</h1>
         <h3>Age: {dog.age}</h3>
