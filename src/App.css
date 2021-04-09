@@ -39,6 +39,8 @@ img {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 6px;
 }
 
 .dog-div {
@@ -47,4 +49,38 @@ img {
   border-radius: 6px;
   padding: 5px;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media screen and (min-width: 768px) {
+
+  .dog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .dog-div {
+    width: 200px;
+    height: 310px;
+    margin: 10px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dog-div h1, .dog-div h3 {
+    margin: 0;
+  }
+
+  .edit-button {
+    margin-bottom: 4px;
+  }
+
+  .edit-button button {
+    width: 70px;
+    font-size: 12px;
+    padding: 0;
+  }
 }

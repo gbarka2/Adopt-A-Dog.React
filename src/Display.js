@@ -6,7 +6,7 @@ const Display = (props) => {
   //loading function for if dogs exist
   const loaded = () => {
     return (
-    <div style={{textAlign: "center"}}>
+    <div className="dog-container" style={{textAlign: "center"}}>
     {dogs.map(dog => {
       return (<article className="dog-div" key={dog._id}>
         <img src={dog.img} alt='dog-for-adoption'/>
