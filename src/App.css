@@ -19,11 +19,24 @@
 }
 
 .paw:first-child {
-  transform: rotate(-20deg)
+  transform: rotate(-20deg);
+  animation: rotation 2s infinite linear;
+  animation-direction: alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
 }
 
 .paw:nth-child(2) {
-  transform: rotate(20deg)
+  transform: rotate(20deg);
+  animation: rotation 2s infinite linear;
+  animation-direction: alternate-reverse;
 }
 
 #title {
