@@ -3,6 +3,8 @@ import "./App.css";
 import { Route, Link, Switch } from "react-router-dom";
 import Display from "./Display";
 import Form from "./Form";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPaw} from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   //url variable
@@ -75,7 +77,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>DOG LISTING SITE</h1>
+      <h1><FontAwesomeIcon className="paw" icon={faPaw} /> Adopt-A-Dog <FontAwesomeIcon className="paw" icon={faPaw} /></h1>
       <Link to="/create">
       <button>Create a Dog</button>
       </Link>

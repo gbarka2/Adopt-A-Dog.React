@@ -10,14 +10,16 @@ const Display = (props) => {
       return (<article key={dog._id}>
         <img src={dog.img} alt='dog-for-adoption'/>
         <h1>{dog.name}</h1>
-        <h3>{dog.age}</h3>
-        <button onClick={() => {
-          props.selectDog(dog)
-          props.history.push("/edit")
-        }}>Edit Dog</button>
-        <button onClick={() => {
-          props.deleteDog(dog)
-        }}>Delete Dog</button>
+        <h3>Age: {dog.age}</h3>
+        <div className="edit-button">
+          <button onClick={() => {
+            props.selectDog(dog)
+            props.history.push("/edit")
+          }}>Edit</button>
+          <button onClick={() => {
+            props.deleteDog(dog)
+          }}>Delete</button>
+        </div>
       </article>)
     })}
     </div>)
