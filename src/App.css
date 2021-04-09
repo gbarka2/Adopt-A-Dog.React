@@ -26,8 +26,8 @@
   transform: rotate(20deg)
 }
 
-h1 {
-  font-size: medium;
+#title {
+  font-size: 3.4rem;
 }
 
 main {
@@ -51,7 +51,19 @@ img {
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+form {
+  margin: 10px;
+}
+
+.form-submit-button {
+  margin: 5px;
+}
+
 @media screen and (min-width: 768px) {
+
+  #title {
+    font-size: 6.6rem;
+  }
 
   .dog-container {
     display: flex;
@@ -83,4 +95,14 @@ img {
     font-size: 12px;
     padding: 0;
   }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    width: 40%;
+  }
+
 }

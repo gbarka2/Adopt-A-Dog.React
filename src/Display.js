@@ -19,7 +19,7 @@ const Display = (props) => {
           }}>Edit</button>
           <button onClick={() => {
             props.deleteDog(dog)
-          }}>Delete</button>
+          }}>Adopt!</button>
         </div>
       </article>)
     })}

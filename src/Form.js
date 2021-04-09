@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const Form = (props) => {
   //STATE FOR THE FORM
@@ -16,30 +17,35 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <input
-        type="number"
-        name="age"
-        placeholder="Age"
-        value={formData.age}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="img"
-        placeholder="Image URL"
-        value={formData.img}
-        onChange={handleChange}
-      />
-      <input type="submit" value={props.label} />
-    </form>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <input
+          type="number"
+          name="age"
+          placeholder="Age"
+          value={formData.age}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="img"
+          placeholder="Image URL"
+          value={formData.img}
+          onChange={handleChange}
+        />
+        <input className="form-submit-button" type="submit" value={props.label} />
+        <Link to="/">
+          <button className="form-submit-button">Home</button>
+        </Link>
+      </form>
+    </div>
   );
 };
 

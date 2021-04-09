@@ -77,9 +77,9 @@ function App() {
 
   return (
     <div className="App">
-      <h2><FontAwesomeIcon className="paw" icon={faPaw} /> Adopt-A-Dog <FontAwesomeIcon className="paw" icon={faPaw} /></h2>
+      <h1 id="title"><FontAwesomeIcon className="paw" icon={faPaw} /> Adopt-A-Dog <FontAwesomeIcon className="paw" icon={faPaw} /></h1>
       <Link to="/create">
-      <button>Create a Dog</button>
+      <button>List a Dog</button>
       </Link>
       {/* <hr /> */}
       <main>
